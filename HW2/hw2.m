@@ -3,7 +3,7 @@ par.m = .958 * 10.^-47;
 par.r = 2.075 * 10.^-51;  
 par.l = 2.463 * 10.^-47;
 
-x = linspace(10^-6,1) % define a vector x to be the x coordinates
+x = logspace(-6,0) % define a vector x to be the x coordinates
 y1 = rho_m(x,par); % define vector of y coordinates
 y2 = rho_r(x,par); % define another vector of y coordinates
 y3 = rho_l(x,par); % define another vector of y coordinates
