@@ -22,8 +22,7 @@ set(gca, 'fontsize',14);
 hold off
 
 xlabel('scale factor, a')
-ylabel('density, GeV^4')
-title('species density as a function of a')
+ylabel('\omega_{i}')
 legend('non rel matter','rel matter','lambda matter', 'neg curvature')
 saveas(f,'rho_k_neg.png')
 
@@ -38,8 +37,7 @@ set(gca, 'fontsize',14);
 hold off
 
 xlabel('scale factor, a')
-ylabel('density, GeV^4')
-title('species density as a function of a')
+ylabel('\omega_{i}')
 legend('non rel matter','rel matter','lambda matter', 'pos curvature')
 saveas(f,'rho_k_pos.png')
 
