@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\addtolength{\textheight}{.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\oddsidemargin}{-.5in}
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  frame=lrtb,
+  showstringspaces=false,
+}
+\begin{document}
+
+\section{Relate $\Omega_{j}$ and $\omega_{j}$ in terms of $h$}
+$$ \frac{\rho_{i} + \rho_{k} + \rho_{\Lambda}} {\rho_{c}} =  \frac{\rho_{i} + \rho{k} + \rho{\Lambda}}{\frac{3H^{2}}{8\pi G}} = \Omega_{i} + \Omega_{k} + \Omega_{\Lambda}$$
+$$ \frac{\rho_{i} + \rho_{k} + \rho_{\Lambda}}{\frac{3(100 h)^{2}}{8\pi G}} = \Omega_{i} + \Omega_{k} + \Omega_{\Lambda} $$
+$$ (\omega_{i} + \omega_{k} + \omega_{\Lambda})/h^{2} =  \Omega_{i} + \Omega_{k} + \Omega_{\Lambda} $$
+$$ \omega_{i} + \omega_{k} + \omega_{\Lambda} = h^{2}( \Omega_{i} + \Omega_{k} + \Omega_{\Lambda}) $$
+
+\section{Write the Friedmann Equation in terms of $\omega_{j}$ and $h$}
+From the Friedmann equation we have
+$$ \frac{8\pi G}{3}( \rho_{i} + \rho_{k} + \rho_{\Lambda}) = H^{2}$$
+$$\rho_{i} + \rho_{k} + \rho_{\Lambda} = \frac{3H^{2}}{8\pi G}$$
+Dividing both sides of the second expression by $\rho^{100}_{c}$ gives us
+$$\omega_{i} + \omega_{k} + \omega_{\Lambda} = \rho_{c} / \rho^{100}_{c} = h^{2}$$
+
+\section{Find the value of $\rho^{100}_{c}$ in energy units}
+From the back of K\&T The critical density is quoted as $8.0992h^{2} \times 10^{-47} \mathrm{GeV}^{4}$. To get $\rho^{100}_{c}$ we let h go to 1 here, to get
+$\rho^{100}_{c} = 8.0992 \times 10^{-47} \mathrm{GeV}^{4}$
+\end{document}
