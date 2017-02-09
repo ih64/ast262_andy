@@ -33,18 +33,19 @@ chisq(0,chisq_par)
 mu_off=fminsearch(@(x) chisq(x, chisq_par) , 0)
 model_fit=chisq(mu_off,chisq_par)
 
+elements=50;
 %now calculate a chisq grid. initialize w zeros
-chisq_grid = zeros(19,20);
+chisq_grid = zeros(elements);
 %initialize arrays to hold omegas for today
-omega_m_today = linspace(0.01,0.35,19);
-omega_l_today = linspace(0.25,0.50,20);
+omega_m_today = linspace(0.01,0.35,elements);
+omega_l_today = linspace(0.25,0.50,elements);
 
 %controls omega_m_today
-for i = 1:19
+for i = 1:elements
      par.m = omega_m_today(i);
 
      %controls omega_l_today
-     for k = 1:20
+     for k = 1:elements
           par.l = omega_l_today(k);
           par.k = .65^2 - par.l - par.r - par.m;
 
@@ -118,3 +119,9 @@ set(gca,'fontsize',15)
 xlim([-inf inf])
 ylim([-inf inf])
 saveas(f,'Rel_Prob.png')
+
+%save the chisq grid
+cosmo.chisq = chisq_grid;
+cosmo.omega_m_today = omega_m_today;
+cosmo.omega_l_today = omega_l_today;
+save cosmo.mat cosmo
