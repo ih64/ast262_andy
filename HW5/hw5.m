@@ -55,7 +55,7 @@ xlabel('a');
 ylabel('\Omega');
 legend('\Omega_m','\Omega_{\phi}');
 set(gca, 'fontsize',14);
-saveas(g,'omega_5.4b.png');
+saveas(g,'omega_54b.png');
 
 
 %plot up the numerical and analytic solutions of phi
@@ -127,7 +127,7 @@ ylabel('\Omega');
 legend('\Omega_m', '\Omega_{\phi}')
 hold off;
 set(gca, 'fontsize',14);
-saveas(i, 'omega_5.4c.png');
+saveas(i, 'omega_54c.png');
 
 
 
