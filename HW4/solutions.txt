@@ -1,0 +1,30 @@
+Imran Hasan
+Ast 262 Early Universe
+
+4.2
+the chi square before obtaining the off set is 2.318e+06. 
+
+4.3
+the off set which minimizes the chi square is 27.3926
+
+the corrected chi square after introducing the correction is 177.643. 
+if we take the off set and model distance modulus to be free parameters, and have 156 data points, the reduced chi square is 177.643/154 = 1.15.
+This is a pretty good model! The deviations from the data are well explained by the uncertainty in the data.
+
+4.4
+please see chi_square_grid.png
+This shows the chi square surface
+
+4.5
+please see Rel_Prob.png
+This figure shows the relative probability of our model given the Super Nova data. 
+The probability has been projected down into the xy plane for clarity.
+By inspection, the maximum likelihood corresponds to a universe with omega lambda ~ .3 and omega m ~.1. This is close to the recipe we used in 4.1
+
+For greater detail, pleas see confidence_reg.png
+This is the likelihood projected down into the xy plane, with 68% and 95.4% confidence regions highlighted in white.
+The Maximum likelihood is indicated by a red star, and red vertical and horizontal lines indicate the parameters corresponding to the maximum likelihood
+
+The Maximum likelihood corresponds to omega m = .0856, omega l = .3026. Taking h to be .65, this gives omega k =0.034
+We can contrast this with our first model where omega m = .11, omega l = .304 and omega k = 0.
+Looking at the confidence regions, these results are still consistent with each other to within 1 sigma
