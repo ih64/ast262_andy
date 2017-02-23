@@ -29,7 +29,7 @@ phidot_0 = sqrt(2*V0_0);
 rhophi_0 = .5*phi0^2 + Vexppre(phi0,par);
 par.rhom=( (1/3)*par.lambda^2 -1 )*rhophi_0;
 
-tspan = linspace(0,.01, 1000);
+tspan = linspace(0,5,1000);
 init = [phi0 phidot_0 a0];
 
 [t f] = ode45(@(t, f) odefun(t, f, par), tspan, init);
@@ -42,5 +42,7 @@ hold on
 %par.V0 = par.V0*par.chi*par.beta^2
 plot(t, phi_analytic, 'b');
 hold off
-saveas(h,'phi_t.png');
+xlabel('time');
+ylabel('\phi');
 legend('numeric', 'analytic');
+saveas(h,'phi_t.png');
