@@ -30,7 +30,7 @@ phidot_0 = sqrt(2*V0_0);
 rhophi_0 = .5*phidot_0^2 + Vexppre(phi0,par);
 par.rhom=( (1/3)*par.lambda^2 -1 )*rhophi_0;
 
-tspan = linspace(0,5,1000);
+tspan = logspace(-10,60,10000);
 init = [phi0 phidot_0 a0];
 
 [t f] = ode45(@(t, f) odefun(t, f, par), tspan, init);
@@ -60,13 +60,13 @@ saveas(g,'omega_54b.png');
 
 %plot up the numerical and analytic solutions of phi
 h=figure();
-plot(t,f(:,1), 'r');
+semilogx(t,f(:,1), 'r+-');
 hold on
 
 par.V0 = par.V0*par.chi*par.beta^2;
 phi_analytic = phi_analytic(t, phi0, par);
 
-plot(t, phi_analytic, 'b');
+semilogx(t, phi_analytic, 'bo-');
 hold off
 xlabel('time');
 ylabel('\phi');
