@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2017 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 FEB 2017 04:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,31 +227,68 @@ e
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] (./HW5.aux) ) 
+[2] [3] <potential.png, id=22, 569.9694pt x 427.3566pt>
+File: potential.png Graphic file (type png)
+ <use potential.png>
+Package pdftex.def Info: potential.png used on input line 111.
+(pdftex.def)             Requested size: 361.34999pt x 270.94455pt.
+
+[4] [5 <./potential.png (PNG copy)>] <phi_t.png, id=30, 578.16pt x 431.6928pt>
+File: phi_t.png Graphic file (type png)
+
+<use phi_t.png>
+Package pdftex.def Info: phi_t.png used on input line 136.
+(pdftex.def)             Requested size: 361.34999pt x 269.80733pt.
+ [6 <./phi_t.png (PNG copy)>]
+<eqofstate.png, id=34, 578.16pt x 431.6928pt>
+File: eqofstate.png Graphic file (type png)
+ <use eqofstate.png>
+Package pdftex.def Info: eqofstate.png used on input line 149.
+(pdftex.def)             Requested size: 361.34999pt x 269.80733pt.
+
+<omega_54b.png, id=35, 569.9694pt x 427.3566pt>
+File: omega_54b.png Graphic file (type png)
+ <use omega_54b.png>
+Package pdftex.def Info: omega_54b.png used on input line 158.
+(pdftex.def)             Requested size: 361.34999pt x 270.94455pt.
+
+<omega_54c.png, id=36, 578.16pt x 431.6928pt>
+File: omega_54c.png Graphic file (type png)
+ <use omega_54c.png>
+Package pdftex.def Info: omega_54c.png used on input line 164.
+(pdftex.def)             Requested size: 361.34999pt x 269.80733pt.
+
+<phiVt.png, id=37, 569.9694pt x 427.3566pt>
+File: phiVt.png Graphic file (type png)
+ <use phiVt.png>
+Package pdftex.def Info: phiVt.png used on input line 172.
+(pdftex.def)             Requested size: 433.62pt x 325.13998pt.
+ [7 <./eqofstate.png (PNG copy)>] [8 <./omega_54b.png (PNG copy)>] [9 <./omega_
+54c.png (PNG copy)>] [10 <./phiVt.png (PNG copy)>] (./HW5.aux) ) 
 Here is how much of TeX's memory you used:
- 2652 strings out of 493014
- 38203 string characters out of 6133351
+ 2684 strings out of 493014
+ 38677 string characters out of 6133351
  106932 words of memory out of 5000000
- 6173 multiletter control sequences out of 15000+600000
+ 6198 multiletter control sequences out of 15000+600000
  9327 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,6n,27p,437b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb>
-Output written on HW5.pdf (4 pages, 117233 bytes).
+ 51i,6n,27p,457b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on HW5.pdf (10 pages, 281705 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

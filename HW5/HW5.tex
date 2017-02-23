@@ -102,10 +102,75 @@ $$ \frac{24\pi G}{\lambda ^2}  = \frac{\rho_{\phi}}{ \rho_{tot}}$$
 In order to keep the appropriate form of the potential, $\lambda$ must be non negative and non zero. Additionally, if this model universe contains matter in addition to the scalar field, the ratio  $\frac{\rho_{\phi}}{ \rho_{tot}} < 1$. All this together tells us that
 
 $$  \lambda > \sqrt{24 \pi G} $$ 
-%\begin{figure}
-%\centering
-%\includegraphics[width=6in]{Omega_k_neg.png}
-%\caption{using a curvature density with negative initial condition}
-%\end{figure}
+
+\section{Numerical solutions}
+\subsection{Exponential prefactor Potential}
+Please see Figure 1
+\begin{figure}
+\centering
+\includegraphics[width=5in]{potential.png}
+\caption{the exponential potential and exponential prefactor as a function of $\phi$. The parameters are set to $\lambda = 8$, $\beta$ = 34, $V_0 = 1$, $\delta = 0.005$, $\chi = 1$, $\phi_0 = \beta 1\mathrm{e}-3$}
+\end{figure}
+
+\subsection{Approximate the analytic solution}
+First we examine the exponential prefactor potential.
+
+$$ V(\phi) = V_{0}(\chi(\phi - \beta)^{2} + \delta)e^{-\lambda \phi}$$
+
+For $\phi \ll \beta$ we can expand  $\phi / \beta$ to first order.
+
+$$ V(\phi) = V_{0}(\chi \phi^2 + \chi \beta^2 - 2\chi\phi\beta) + \delta)e^{-\lambda \phi}$$
+$$ V(\phi) = V_{0}\chi\beta^{2}((\frac{\phi}{\beta})^2 + 1 - 2\chi\frac{\phi}{\beta} + \frac{\delta}{\chi\beta^2})e^{-\lambda \phi}$$
+
+Now since $\phi \ll \beta$, $\delta \ll \beta^2$
+
+$$ V(\phi) \approx V_{0}\chi\beta^{2}(1 - 2\chi\frac{\phi}{\beta})e^{-\lambda \phi}$$
+$$ V(\phi) \approx V_{0}\chi\beta^{2}e^{-\lambda \phi} - 2V_{0}\chi\phi\beta e^{-\lambda \phi}$$
+
+By inspection, in this limit the potential looks like the exponential potential from question 3 with a first order correction term subtracted off. Only now we have to substitute $V_{0} \to V_{0}\chi\beta^2$. 
+
+Now we will compare the numerical solution of $\phi(t)$ to the analytical solution. When calculating The analytical solution, we will use $V(\phi) \approx V_{0}\chi\beta^{2}e^{-\lambda \phi}$.
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{phi_t.png}
+\caption{analytic and numerical solutions of $\phi$, calculated using the exponential and exponential prefactor solutions, respectively. The parameters are set to $\lambda = 8$, $\beta$ = 34, $V_0 = 1$, $\delta = 0.005$, $\chi = 1$, $\phi_0 = \beta 1\mathrm{e}-3$. In the small $\phi$ limit, the solutions are approximately equal}
+\end{figure}
+
+\subsection{$\rho_{\phi}$ and $\rho_{\lambda}$}
+lol
+
+\subsection{Equation of state}
+
+$w_{\phi}$ can be calculated by recalling the relations from the stress energy tensor for the field scalar field $\phi$. Namely, $w = p_{\phi} / \rho_{\phi}$, $p_{\phi} = \frac{\dot{\phi}^2}{2} - V(\phi)$ and $\rho_{\phi} =  \frac{\dot{\phi}^2}{2} + V(\phi)$. Our ODE solver gives us $\dot{\phi}$, and we know the form of the potential, so we can evaluate the equation of state for all time steps. Please see figure 3 for solution.
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{eqofstate.png}
+\caption{The equation of state for the scalar field $\phi$. We use the initial condition $\phi_{0} = 33.95$ and $\dot{\phi}$ = 2e-61. The equation of state oscillates but dampens out to -1. For such a scenario, $\dot{\phi} \to 0$ }
+\end{figure}
+
+\subsection{$\Omega_{i}$ for different scenarios}
+Please see figure 4 for the solution using the results of 4.2, and figure 5 for the results of 4.3
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{omega_54b.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{omega_54c.png}
+\caption{This universe starts out matter dominated, but as time elapses, switches over to a $\phi$ dominated universe.}
+\end{figure}
+
+\subsection{$\phi$ and $V(\phi)$ vs time}
+Please see figure 6 below
+\begin{figure}
+\centering
+\includegraphics[width=6in]{phiVt.png}
+\caption{The scalar field drops through the minima of the potential, then oscillates about it. The motion mimics that of a damped harmonic oscillator}
+\end{figure}
 
 \end{document}
