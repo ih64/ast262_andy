@@ -23,7 +23,7 @@ hold off
 
 %define initial conditions
 a0=1;
-phi0=par.beta*10^-5;
+phi0=par.beta*10^-3;
 V0_0 = Vexppre(phi0,par);
 phidot_0 = sqrt(2*V0_0);
 rhophi_0 = .5*phi0^2 + Vexppre(phi0,par);
@@ -34,12 +34,14 @@ init = [phi0 phidot_0 a0];
 
 [t f] = ode45(@(t, f) odefun(t, f, par), tspan, init);
 
-phi_analytic = phi_analytic(t, phi0, par);
 
 h=figure();
-plot(t, f(:,1), 'r');
+plot(t,f(:,1), 'r');
 hold on
-%par.V0 = par.V0*par.chi*par.beta^2
+
+par.V0 = par.V0*par.chi*par.beta^2;
+phi_analytic = phi_analytic(t, phi0, par);
+
 plot(t, phi_analytic, 'b');
 hold off
 xlabel('time');
