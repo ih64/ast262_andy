@@ -49,7 +49,7 @@ semilogy(t,f(:,3), 'r-');
 xlabel('time')
 ylabel('Log(a)')
 set(gca, 'fontsize', 14);
-saveas(g, '4_loga_t.png')
+saveas(h, '4_loga_t.png')
 
 %plot up numerical solution of w
 plt3=figure();
