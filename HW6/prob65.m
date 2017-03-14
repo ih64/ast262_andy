@@ -103,10 +103,11 @@ hold on;
 plot(log10(a_rad),log10(R_r),'k', 'LineWidth',2);
 plot(log10(a_mat),log10(R_m),'k', 'LineWidth',2);
 plot(log10(a_lambda), log10(R_l),'k', 'LineWidth', 2);
-plot([-40 0], [-40+log10(par.Mpc), log10(par.Mpc)], 'r', 'LineWidth', 2)
-plot([-40 0], [-40+log10(100*par.Mpc), log10(100*par.Mpc)], 'g', 'LineWidth', 2)
-plot([-40 0], [-40+log10(1000*par.Mpc), log10(1000*par.Mpc)], 'b', 'LineWidth', 2)
-xlim([-40 .5]);
+plot([-60 0], [-60+log10(par.Mpc), log10(par.Mpc)], 'r', 'LineWidth', 2)
+plot([-60 0], [-60+log10(100*par.Mpc), log10(100*par.Mpc)], 'g', 'LineWidth', 2)
+plot([-60 0], [-60+log10(1000*par.Mpc), log10(1000*par.Mpc)], 'b', 'LineWidth', 2)
+xlim([-60 .5]);
+%ylim([30 44 ])
 xlabel('log(a/a0)');
 ylabel('GeV^{-1}');
 hold off
